@@ -5,12 +5,13 @@
 class Ask < Formula
   desc "Agent Skills Kit - The Package Manager for Agent Skills"
   homepage "https://github.com/yeasy/ask"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
+  head "https://github.com/yeasy/ask.git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yeasy/ask/releases/download/v0.1.0/ask_0.1.0_darwin_amd64.tar.gz"
+      url "https://github.com/yeasy/ask/releases/download/v0.2.0/ask_0.2.0_darwin_amd64.tar.gz"
       sha256 "3fb2d55c91b3f826f9e61b9101c283fc34737cfcbaab77f0ed9444712a803256"
 
       def install
