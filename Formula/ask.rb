@@ -5,12 +5,12 @@
 class Ask < Formula
   desc "Agent Skills Kit - The Package Manager for Agent Skills"
   homepage "https://github.com/yeasy/ask"
-  version "0.4.0"
+  version "0.6.1"
   license "MIT"
   head "https://github.com/yeasy/ask.git"
 
-  url "https://github.com/yeasy/ask/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "6477918e6ceb9655915404315aae75e13bce8492b83b13271933cbf692f41af6"
+  url "https://github.com/yeasy/ask/archive/refs/tags/v0.6.1.tar.gz"
+  sha256 "79b3c6cfaf27b738a41ca5944544a0e90593e4b85ef0edb2d987ac2ee7513288"
 
   depends_on "go" => :build
 
