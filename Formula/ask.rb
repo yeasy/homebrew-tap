@@ -5,17 +5,43 @@
 class Ask < Formula
   desc "Agent Skills Kit - The Package Manager for Agent Skills"
   homepage "https://github.com/yeasy/ask"
-  version "0.6.1"
+  version "0.7.1"
   license "MIT"
-  head "https://github.com/yeasy/ask.git"
 
-  url "https://github.com/yeasy/ask/archive/refs/tags/v0.6.1.tar.gz"
-  sha256 "79b3c6cfaf27b738a41ca5944544a0e90593e4b85ef0edb2d987ac2ee7513288"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/yeasy/ask/releases/download/v0.7.1/ask_0.7.1_darwin_amd64.tar.gz"
+      sha256 "5e0b5a2e212a8a3b7797d3e2b57fbb3530e8ac20e0690508fac173afac4e9910"
 
-  depends_on "go" => :build
+      def install
+        bin.install "ask"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/yeasy/ask/releases/download/v0.7.1/ask_0.7.1_darwin_arm64.tar.gz"
+      sha256 "55106f1ca0c32818bab52530373e99b304b573234a99f695f7a5ba4b521fcec7"
 
-  def install
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/ask/main.go"
+      def install
+        bin.install "ask"
+      end
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/yeasy/ask/releases/download/v0.7.1/ask_0.7.1_linux_amd64.tar.gz"
+      sha256 "965ecece33e3e7268a62e96ba2999743e17299c868eab0bc748e5f6c45cf1cd3"
+      def install
+        bin.install "ask"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/yeasy/ask/releases/download/v0.7.1/ask_0.7.1_linux_arm64.tar.gz"
+      sha256 "3c24d2019c95823cae437c5324901e36e28e859dbdd503459fc92947844b8abc"
+      def install
+        bin.install "ask"
+      end
+    end
   end
 
   test do
