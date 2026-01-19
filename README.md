@@ -1,25 +1,25 @@
-# Homebrew Tap for ASK
+# Homebrew Tap
 
-This is the [Homebrew](https://brew.sh/) tap for [ASK (Agent Skills Kit)](https://github.com/yeasy/ask).
+This is a [Homebrew](https://brew.sh/) tap for tools by [@yeasy](https://github.com/yeasy).
 
 ## Installation
 
 ```bash
 brew tap yeasy/tap
-brew install ask
+brew install <formula>
 ```
 
 ## Update
 
 ```bash
 brew update
-brew upgrade ask
+brew upgrade <formula>
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall ask
+brew uninstall <formula>
 brew untap yeasy/tap
 ```
 
@@ -27,4 +27,5 @@ brew untap yeasy/tap
 
 | Formula | Description |
 |---------|-------------|
-| ask | Agent Skills Kit - Package Manager for AI Agent Skills |
+| [ask](https://github.com/yeasy/ask) | Agent Skills Kit - Package Manager for AI Agent Skills |
+| [autoppt](https://github.com/yeasy/autoppt) | Generate Professional Presentations in Seconds using AI |
