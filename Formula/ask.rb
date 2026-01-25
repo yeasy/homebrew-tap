@@ -5,21 +5,21 @@
 class Ask < Formula
   desc "Agent Skills Kit - The Package Manager for Agent Skills"
   homepage "https://github.com/yeasy/ask"
-  version "1.0.0-rc1"
+  version "1.0.0-rc2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yeasy/ask/releases/download/v1.0.0-rc1/ask_1.0.0-rc1_darwin_amd64.tar.gz"
-      sha256 "1ace3604f78c94537a479280b5ccb72add019e76add169b7a9318c099906abc1"
+      url "https://github.com/yeasy/ask/releases/download/v1.0.0-rc2/ask_1.0.0-rc2_darwin_amd64.tar.gz"
+      sha256 "001d824f9a7fa53e05a96ce0955d0e9bb1e38a5940afeabe73f996c691c3e16b"
 
       def install
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yeasy/ask/releases/download/v1.0.0-rc1/ask_1.0.0-rc1_darwin_arm64.tar.gz"
-      sha256 "25a8b9f47e3bef6bee217e31685aabec68ff70371ee3e8690ae7a35715809266"
+      url "https://github.com/yeasy/ask/releases/download/v1.0.0-rc2/ask_1.0.0-rc2_darwin_arm64.tar.gz"
+      sha256 "11d6157197b8c2c5ff8b0908a60f163062f6138cf9c9dd3678b1f12b1133b9d0"
 
       def install
         bin.install "ask"
@@ -29,15 +29,15 @@ class Ask < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeasy/ask/releases/download/v1.0.0-rc1/ask_1.0.0-rc1_linux_amd64.tar.gz"
-      sha256 "0a6e107374094f827344eac6a2b378de3c38112d1169d22d7f5e397e527313cf"
+      url "https://github.com/yeasy/ask/releases/download/v1.0.0-rc2/ask_1.0.0-rc2_linux_amd64.tar.gz"
+      sha256 "01bdb0264df1675a57c883d5659d1df6e663a182a064fc38f74e0342fc7d20a6"
       def install
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeasy/ask/releases/download/v1.0.0-rc1/ask_1.0.0-rc1_linux_arm64.tar.gz"
-      sha256 "3ed41be886109774982818a255c63393d673d0fdfbb63f54fb34711302eacfaa"
+      url "https://github.com/yeasy/ask/releases/download/v1.0.0-rc2/ask_1.0.0-rc2_linux_arm64.tar.gz"
+      sha256 "e211e72073f674c19d0c763d945b2d9605d9049fe0f49855a4ea0e57d2e904e1"
       def install
         bin.install "ask"
       end
