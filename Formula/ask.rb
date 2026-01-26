@@ -11,7 +11,7 @@ class Ask < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yeasy/ask/releases/download/v1.0.0/ask_1.0.0_darwin_amd64.tar.gz"
-      sha256 "757589b89fa29e72e38e921eff884529cdf66cba4f6598e2cf863b657f275abb"
+      sha256 "e61f4c28314ea7d5905587d0096bf366786f08164787f477320a7712deefd605"
 
       def install
         bin.install "ask"
@@ -19,7 +19,7 @@ class Ask < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yeasy/ask/releases/download/v1.0.0/ask_1.0.0_darwin_arm64.tar.gz"
-      sha256 "6e7df8baed85013838ed0c7febb4702206f16d498539de68212a23745d038d98"
+      sha256 "d7b2f4082050d41852d00c712595a16e4632b9d077d32ee65f93dd399c966324"
 
       def install
         bin.install "ask"
@@ -30,14 +30,14 @@ class Ask < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yeasy/ask/releases/download/v1.0.0/ask_1.0.0_linux_amd64.tar.gz"
-      sha256 "61245be5644b2034a5abd9e888b659ba83e991958245b273de7e64f23bd80093"
+      sha256 "0c39e5b2fc5a138fb292dfd7316c409a5ed064091594c59f9d8e4271bf131943"
       def install
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yeasy/ask/releases/download/v1.0.0/ask_1.0.0_linux_arm64.tar.gz"
-      sha256 "36d2d48478915b0f82ba5ee0869b34106f1166141f2f7c977afb0018efab0afb"
+      sha256 "47ab2186400f7a857ecc2c8d7d96c9b1a24b22c3328ffa024117e97e26ad28e0"
       def install
         bin.install "ask"
       end
