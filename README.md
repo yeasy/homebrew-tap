@@ -29,3 +29,9 @@ brew untap yeasy/tap
 |---------|-------------|
 | [ask](https://github.com/yeasy/ask) | Agent Skills Kit - Package Manager for AI Agent Skills |
 | [autoppt](https://github.com/yeasy/autoppt) | Generate Professional Presentations in Seconds using AI |
+
+## Available Casks (macOS GUI Apps)
+
+| Cask | Description | Install Command |
+|------|-------------|-----------------|
+| [ask-desktop](https://github.com/yeasy/ask) | ASK Desktop App - Visual skill manager | `brew install --cask ask-desktop` |
