@@ -5,21 +5,21 @@
 class Ask < Formula
   desc "Agent Skills Kit - The Package Manager for Agent Skills"
   homepage "https://github.com/yeasy/ask"
-  version "1.6.5"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yeasy/ask/releases/download/v1.6.5/ask_1.6.5_darwin_amd64.tar.gz"
-      sha256 "70e39f5f91e8da07e6b1139a7f82e79621d1bd66de3b045114b3d89d901d2ce8"
+      url "https://github.com/yeasy/ask/releases/download/v1.7.0/ask_1.7.0_darwin_amd64.tar.gz"
+      sha256 "53a4f64389a95513ae2f4d96815b7fe898cf8f5fb519b51b9afe0f881bb089b6"
 
       def install
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yeasy/ask/releases/download/v1.6.5/ask_1.6.5_darwin_arm64.tar.gz"
-      sha256 "9b9f7d010a336902e1899db1c48bedca4b2caad434f2dcecfcf5674bc2b785a7"
+      url "https://github.com/yeasy/ask/releases/download/v1.7.0/ask_1.7.0_darwin_arm64.tar.gz"
+      sha256 "179061149a0ba132d1df1ab85a26270130106b9a6b04389d370eca0f2741cb95"
 
       def install
         bin.install "ask"
@@ -29,15 +29,15 @@ class Ask < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeasy/ask/releases/download/v1.6.5/ask_1.6.5_linux_amd64.tar.gz"
-      sha256 "1f6b01626f434a88b2753d3039c17df5091843d23ca656155416ce919010188d"
+      url "https://github.com/yeasy/ask/releases/download/v1.7.0/ask_1.7.0_linux_amd64.tar.gz"
+      sha256 "75e2648cede48636d09349ed384f18150cabaf4a5a1cdf91c530403cb5fbe9ea"
       def install
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeasy/ask/releases/download/v1.6.5/ask_1.6.5_linux_arm64.tar.gz"
-      sha256 "41b43d227bfcd2a10f970a8978e3478e7de480741e614ebffb82e2551567d034"
+      url "https://github.com/yeasy/ask/releases/download/v1.7.0/ask_1.7.0_linux_arm64.tar.gz"
+      sha256 "9cf4ad551ec49116d89aaf3e2958b8592280659e2fe3dfdd5dba003ce1e14777"
       def install
         bin.install "ask"
       end
