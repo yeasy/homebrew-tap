@@ -5,23 +5,23 @@
 class Ask < Formula
   desc "Agent Skills Kit - The Package Manager for Agent Skills"
   homepage "https://github.com/yeasy/ask"
-  version "1.7.2"
+  version "1.7.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yeasy/ask/releases/download/v1.7.2/ask_1.7.2_darwin_amd64.tar.gz"
-      sha256 "8dd86c08ba1c05714709addf50d0138811d58fe21fc36b63b2ffce91fba04330"
+      url "https://github.com/yeasy/ask/releases/download/v1.7.3/ask_1.7.3_darwin_amd64.tar.gz"
+      sha256 "ac8cfcaa3fc96dc579f371b96794527af6013b471c3b81810b6eda2d03f02863"
 
-      def install
+      define_method(:install) do
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yeasy/ask/releases/download/v1.7.2/ask_1.7.2_darwin_arm64.tar.gz"
-      sha256 "ce1c8209b1c8a9d8245487977a39d50556273477e555088a98e72f5f672cd7ce"
+      url "https://github.com/yeasy/ask/releases/download/v1.7.3/ask_1.7.3_darwin_arm64.tar.gz"
+      sha256 "1e64c02ac6d6cd7c57b4a72fc5a9a69a3fb480e0f7699d7d515bf0a6e928e4ef"
 
-      def install
+      define_method(:install) do
         bin.install "ask"
       end
     end
@@ -29,16 +29,16 @@ class Ask < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeasy/ask/releases/download/v1.7.2/ask_1.7.2_linux_amd64.tar.gz"
-      sha256 "1392c58a19214d403acb31f7f845cf9f17100232a8583c589dc079313471efa1"
-      def install
+      url "https://github.com/yeasy/ask/releases/download/v1.7.3/ask_1.7.3_linux_amd64.tar.gz"
+      sha256 "de53ee02d5d033b11b165a83e3b0bd326d71d094f0ca9aabc413b968223d0edf"
+      define_method(:install) do
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeasy/ask/releases/download/v1.7.2/ask_1.7.2_linux_arm64.tar.gz"
-      sha256 "e34cce456f6df49d96bc254b3907e727dfbf6b6fff2383defa5f67657a14c412"
-      def install
+      url "https://github.com/yeasy/ask/releases/download/v1.7.3/ask_1.7.3_linux_arm64.tar.gz"
+      sha256 "1f87d824b6e85a7cf12460cdadd0e74bfe993b900f12d505cd51043b28d39c81"
+      define_method(:install) do
         bin.install "ask"
       end
     end
