@@ -11,7 +11,7 @@ class Mdpress < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yeasy/mdpress/releases/download/v0.2.0/mdpress_0.2.0_darwin_amd64.tar.gz"
-      sha256 "17d12a4996015b3207029c36754437656cbf8d8a2d6dc4e05668d88074191173"
+      sha256 "84a941177a5edb7b8a0a7bca9b512e689c15db0c088e89b5b472a459d5bd5536"
 
       define_method(:install) do
         bin.install "mdpress"
@@ -19,7 +19,7 @@ class Mdpress < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yeasy/mdpress/releases/download/v0.2.0/mdpress_0.2.0_darwin_arm64.tar.gz"
-      sha256 "1e53b3f2e76d8f6a6f472c379a45da59efb52cf810006332a3304a308c6c5ee2"
+      sha256 "e2de3b330c36cc4857da2e52d993689a7568b66ab9917e1edc1d2789af71124c"
 
       define_method(:install) do
         bin.install "mdpress"
@@ -30,14 +30,14 @@ class Mdpress < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yeasy/mdpress/releases/download/v0.2.0/mdpress_0.2.0_linux_amd64.tar.gz"
-      sha256 "920d25729352c8e7fe3d467c419d95a5b46d9446538a5b8a4e6cefe6104b4e41"
+      sha256 "274bb7549affead4fde546eb3a1f77627d27ddba81abcd2333cc7065ec294bb6"
       define_method(:install) do
         bin.install "mdpress"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yeasy/mdpress/releases/download/v0.2.0/mdpress_0.2.0_linux_arm64.tar.gz"
-      sha256 "7e342a8f396c409730a1a984d1f4624dd4db109eeef3c61974937cc5b77d2a9a"
+      sha256 "6c6994180efc8db34f8595799432f2d5bb8130c6547a7c17b1a59628ede504df"
       define_method(:install) do
         bin.install "mdpress"
       end
