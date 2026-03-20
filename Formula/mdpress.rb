@@ -5,21 +5,21 @@
 class Mdpress < Formula
   desc "Markdown publishing CLI for book-style and documentation-style projects"
   homepage "https://github.com/yeasy/mdpress"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yeasy/mdpress/releases/download/v0.3.1/mdpress_0.3.1_darwin_amd64.tar.gz"
-      sha256 "d27dbd6476bca05a4402a42b7415e896ac2d6c59234b41e71c6f846691eb81a5"
+      url "https://github.com/yeasy/mdpress/releases/download/v0.4.0/mdpress_0.4.0_darwin_amd64.tar.gz"
+      sha256 "a021c8e69cbbb9c1926ce0d916cffee248cde736f7daebd2d617b73bb9e4a870"
 
       define_method(:install) do
         bin.install "mdpress"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yeasy/mdpress/releases/download/v0.3.1/mdpress_0.3.1_darwin_arm64.tar.gz"
-      sha256 "1fa420f9449ea8a80757ef8e0edac715f5bfd7fb2b9ef82dcb80e4baf56e3ef2"
+      url "https://github.com/yeasy/mdpress/releases/download/v0.4.0/mdpress_0.4.0_darwin_arm64.tar.gz"
+      sha256 "760ac3e2e36f88d0e50646044534ab1dde013f78b46af0b382c142c0728d225e"
 
       define_method(:install) do
         bin.install "mdpress"
@@ -29,15 +29,15 @@ class Mdpress < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeasy/mdpress/releases/download/v0.3.1/mdpress_0.3.1_linux_amd64.tar.gz"
-      sha256 "25f4889d7e6868ad2949707f75ec7f37fc4209d4ca2c8243c5decdb77f73ede8"
+      url "https://github.com/yeasy/mdpress/releases/download/v0.4.0/mdpress_0.4.0_linux_amd64.tar.gz"
+      sha256 "a3daebb9ee9f86ba147ae8709414595a4e7194c815ca497778cd43dc7fc568ec"
       define_method(:install) do
         bin.install "mdpress"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeasy/mdpress/releases/download/v0.3.1/mdpress_0.3.1_linux_arm64.tar.gz"
-      sha256 "f2ba5d1f72f6dbd3f9d74ef4993cc071fecf9a8beb45d13011101f1415b4b932"
+      url "https://github.com/yeasy/mdpress/releases/download/v0.4.0/mdpress_0.4.0_linux_arm64.tar.gz"
+      sha256 "7d064dfe8f7773b16c52ce22e5a8655d4b4c0654c4b21efeee65554bb6a77569"
       define_method(:install) do
         bin.install "mdpress"
       end
