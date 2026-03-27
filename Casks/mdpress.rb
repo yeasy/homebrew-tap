@@ -3,7 +3,7 @@ cask "mdpress" do
   name "mdpress"
   desc "Markdown publishing CLI for book-style and documentation-style projects"
   homepage "https://github.com/yeasy/mdpress"
-  version "0.6.5"
+  version "0.6.6"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "mdpress" do
     on_intel do
       url "https://github.com/yeasy/mdpress/releases/download/v#{version}/mdpress_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/yeasy/mdpress/"
-      sha256 "7feb52d7275490d980f9b3da5773625f15628ecb124ff9b3483137475bfa933e"
+      sha256 "a2fbed9fa8cadeb70a99580582df5906650b8ecf7ecf9da618762840d3cadac0"
     end
     on_arm do
       url "https://github.com/yeasy/mdpress/releases/download/v#{version}/mdpress_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/yeasy/mdpress/"
-      sha256 "191f87071c679d17b7d6a45cc20cb775139a8de91e7eef0513d58fd2449c39d8"
+      sha256 "13dbe53593e795f3ac9491a7a41d95b27185d843732ff8918dd8c754869dda38"
     end
   end
 
@@ -28,12 +28,12 @@ cask "mdpress" do
     on_intel do
       url "https://github.com/yeasy/mdpress/releases/download/v#{version}/mdpress_#{version}_linux_amd64.tar.gz",
         verified: "github.com/yeasy/mdpress/"
-      sha256 "4e3d5ae132ee0c963e04ee30829d9844631a9fdfce4238f165f50b6de1db4100"
+      sha256 "a8b07b1ada82dbbcc6bf0cfdb0881f83f510656cce1491afd5e529c774d04ab0"
     end
     on_arm do
       url "https://github.com/yeasy/mdpress/releases/download/v#{version}/mdpress_#{version}_linux_arm64.tar.gz",
         verified: "github.com/yeasy/mdpress/"
-      sha256 "843b43fda78b5803b917b6271d094ab51e66b44cf12ad8ecef7b6e1351f75730"
+      sha256 "1f0485ebbc10c33c903b244fc8e684be42ff94907b7e4e3cd45a7a018a096092"
     end
   end
 
