@@ -5,21 +5,21 @@
 class Ask < Formula
   desc "Agent Skills Kit - The Package Manager for Agent Skills"
   homepage "https://github.com/yeasy/ask"
-  version "1.8.0"
+  version "1.8.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yeasy/ask/releases/download/v1.8.0/ask_1.8.0_darwin_amd64.tar.gz"
-      sha256 "7171de9bc59829c4428f54ca310f01658c33741d51c927b89f496b3a2e81ef62"
+      url "https://github.com/yeasy/ask/releases/download/v1.8.1/ask_1.8.1_darwin_amd64.tar.gz"
+      sha256 "7531ebef6c5171350babd88f463978a1c09daef454457b669b80b89c234a1981"
 
       define_method(:install) do
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yeasy/ask/releases/download/v1.8.0/ask_1.8.0_darwin_arm64.tar.gz"
-      sha256 "71426969954c9e34892d2434ca10115874179ed7e240e094977555a81cf1cdbf"
+      url "https://github.com/yeasy/ask/releases/download/v1.8.1/ask_1.8.1_darwin_arm64.tar.gz"
+      sha256 "068b94f92c4e00a8268c56cb20e90dbf97c5cc5838d6220e6c895578ffdb0f08"
 
       define_method(:install) do
         bin.install "ask"
@@ -29,15 +29,15 @@ class Ask < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeasy/ask/releases/download/v1.8.0/ask_1.8.0_linux_amd64.tar.gz"
-      sha256 "920c61631cbc12a2ab5a9be42ef5909ba8a020d28f143c901310b314e97eaf4b"
+      url "https://github.com/yeasy/ask/releases/download/v1.8.1/ask_1.8.1_linux_amd64.tar.gz"
+      sha256 "1db7eb1dd1b3957cbac72069b0627bc79ccd3f3076d2e9f23df8e545209c8fdb"
       define_method(:install) do
         bin.install "ask"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yeasy/ask/releases/download/v1.8.0/ask_1.8.0_linux_arm64.tar.gz"
-      sha256 "4bb41507af7baf602be853f458b960dc70969ce8baf3b9cd34248f8dca26aa86"
+      url "https://github.com/yeasy/ask/releases/download/v1.8.1/ask_1.8.1_linux_arm64.tar.gz"
+      sha256 "cfd428012a1a4949561844e82f2960ca20395c4d743f4dd66f6cf8da60fda0c1"
       define_method(:install) do
         bin.install "ask"
       end
