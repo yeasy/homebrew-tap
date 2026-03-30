@@ -6,12 +6,12 @@ cask "mdpress" do
     on_intel do
       url "https://github.com/yeasy/mdpress/releases/download/v#{version}/mdpress_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/yeasy/mdpress/"
-      sha256 "f3be9e3a2c48d1681e3cedb83d12981019f095243b07f974da8330e36b19f35c"
+      sha256 "2edfb18b360175558512d3457997c592e173056a638cf4f91dc0061f0054a332"
     end
     on_arm do
       url "https://github.com/yeasy/mdpress/releases/download/v#{version}/mdpress_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/yeasy/mdpress/"
-      sha256 "3010061b8e97ad23585190cd0923bc780bc858a9b65a9a090755c8664993d7c9"
+      sha256 "acf0df15d8e9c8a191e181fce9c4fb9df6c470f3fe18521ac95439a9f4565e5d"
     end
   end
 
@@ -19,12 +19,12 @@ cask "mdpress" do
     on_intel do
       url "https://github.com/yeasy/mdpress/releases/download/v#{version}/mdpress_#{version}_linux_amd64.tar.gz",
         verified: "github.com/yeasy/mdpress/"
-      sha256 "76ce4b326cda857d06487a260aed1cbf26247f77d005ea4759ed2bc369f63274"
+      sha256 "0a25a33179e6fc3bc8a8c4e7e2834d39225d6592f0cd2a1bc1abce0489e12a30"
     end
     on_arm do
       url "https://github.com/yeasy/mdpress/releases/download/v#{version}/mdpress_#{version}_linux_arm64.tar.gz",
         verified: "github.com/yeasy/mdpress/"
-      sha256 "2d81f3eed88c10efb164730856ef48c905b54a6b264dd5114691ce29739de123"
+      sha256 "77a9706229585873ce0e3dfd3f1a0c1464416e1db24a94cdda1c9ebdfcf4e56d"
     end
   end
 
