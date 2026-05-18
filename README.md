@@ -2,36 +2,40 @@
 
 This is a [Homebrew](https://brew.sh/) tap for tools by [@yeasy](https://github.com/yeasy).
 
-## Installation
+## Setup
 
 ```bash
 brew tap yeasy/tap
-brew install <formula>
 ```
+
+## Available Packages
+
+### CLIs
+
+| Package | Type | Description | Install |
+|---------|------|-------------|---------|
+| [mdpress](https://github.com/yeasy/mdpress) | Cask | Publish Markdown as site, PDF, HTML, ePub | `brew install --cask yeasy/tap/mdpress` |
+| [ask](https://github.com/yeasy/ask) | Formula | Agent Skills Kit — package manager for AI agent skills | `brew install yeasy/tap/ask` |
+| [autoppt](https://github.com/yeasy/autoppt) | Formula | Generate professional presentations using AI | `brew install yeasy/tap/autoppt` |
+
+### Desktop Apps (macOS)
+
+| Package | Type | Description | Install |
+|---------|------|-------------|---------|
+| [ask-desktop](https://github.com/yeasy/ask) | Cask | ASK Desktop App — visual skill manager | `brew install --cask yeasy/tap/ask-desktop` |
 
 ## Update
 
 ```bash
 brew update
-brew upgrade <formula>
+brew upgrade <package>           # formulae
+brew upgrade --cask <package>    # casks
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall <formula>
+brew uninstall <package>         # formulae
+brew uninstall --cask <package>  # casks
 brew untap yeasy/tap
 ```
-
-## Available Formulae
-
-| Formula | Description |
-|---------|-------------|
-| [ask](https://github.com/yeasy/ask) | Agent Skills Kit - Package Manager for AI Agent Skills |
-| [autoppt](https://github.com/yeasy/autoppt) | Generate Professional Presentations in Seconds using AI |
-
-## Available Casks (macOS GUI Apps)
-
-| Cask | Description | Install Command |
-|------|-------------|-----------------|
-| [ask-desktop](https://github.com/yeasy/ask) | ASK Desktop App - Visual skill manager | `brew install --cask ask-desktop` |
