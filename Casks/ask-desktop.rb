@@ -1,8 +1,8 @@
 cask "ask-desktop" do
-  version "1.3.0"
-  sha256 :no_check
+  version "1.9.9"
+  sha256 "b025e9fc3595b9f752e914d890bf1a35822d5777bca92d0dd243527def6070c7"
 
-  url "https://github.com/yeasy/ask/releases/download/v#{version}/ask-desktop-darwin-amd64.zip"
+  url "https://github.com/yeasy/ask/releases/download/v#{version}/ask-desktop-macos-universal.zip"
   name "ASK Desktop"
   desc "Agent Skills Kit - The Package Manager for Agent Skills (Desktop App)"
   homepage "https://github.com/yeasy/ask"
